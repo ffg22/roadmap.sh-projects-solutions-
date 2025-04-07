@@ -1,0 +1,230 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, .foter{
+    font-family: 'papyrus', fantasy; 
+}
+
+h1 {
+    font-size: 1.9em;
+}
+
+h2 {
+    font-size: 1.5em;
+    padding: 15px 0 5px 10px;
+}
+
+h3 {
+    font-size: 1em;
+    padding: 5px 0 5px 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li a{
+    color: black;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+main .intro {
+    background-color: #fff;
+    padding: 10px 0 30px 0;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border: 1px solid black;
+}
+
+.container .projects {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.container .projects li {
+    padding: 6px 10px;
+    border-bottom: 1px solid black;
+}
+
+.container .projects li:last-child {
+    border-bottom: none;
+}
+
+.container .work-experience {
+    grid-area: 1 / 2 / 2 / 3;
+    border: solid black;
+    border-width: 0 1px;
+}
+
+.container .work-experience .roadmap {
+    border-bottom: 1px solid black;
+}
+
+.container .work-experience .roadmap p{
+    padding: 0 0 5px 10px;
+}
+
+.container .work-experience .roadmap a {
+    display: inline-block;
+    text-decoration: none;
+    color: blue;
+    padding: 5px 0 15px 10px;
+    font-size: 0.8em;
+}
+
+.container .work-experience .work p {
+    padding: 5px 10px 10px 10px;
+}
+
+.container .work-experience .work a {
+    display: inline-block;
+    text-decoration: none;
+    color: blue;
+    padding: 5px 0 10px 10px;
+    font-size: 0.8em;
+}
+
+.container .education {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.container .education p {
+    padding: 5px 10px;
+}
+
+.container .education li {
+    list-style-type:"- ";
+    list-style-position: inside;
+    padding: 0 10px
+}
+
+.container .education li:last-child {
+    padding: 0 10px 10px 10px;
+}
+
+aside {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+}
+
+aside h2 {
+    grid-area: 1 / 1 / 2 / 4;
+}
+
+aside #first {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+aside #second {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+aside #third {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.sub-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+blockquote {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 5px 10px 10px;
+}
+
+#second {
+    margin: 10px 0;
+}
+
+#third {
+    margin: 10px 10px 10px 5px;
+}
+
+blockquote footer {
+    padding: 5px 0 0 0;
+    color: grey;
+}
+ 
+.footer {
+    text-align: center;
+    font-weight: bold;
+    padding: 40px;
+}
+
+@media screen and (max-width:600px) {
+    img {
+        width: 64px;
+    }
+    
+    header {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .logo {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav {
+        margin-top: 5px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container .projects {
+        text-align: center;
+    }
+
+    .container .projects li:last-child {
+        border-bottom: 1px solid black;
+    }
+
+    .container .work-experience  {
+        border: none
+    }
+
+    .container .work-experience .work {
+        border-bottom: 1px solid black;
+    }
+
+    #first {
+        margin: 10px;
+    }
+
+    #second {
+        display: none;
+    }
+
+    #third {
+        display: none;
+    }
+}
