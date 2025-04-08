@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datepicker ui</title>
+    <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAbFBMVEX///8AAACMjIx9fX27u7seHh7u7u7i4uIJCQmrq6tra2v19fXo6OgqKiqtra2QkJBFRUXExMRLS0uFhYWXl5fS0tKkpKRdXV0WFhZSUlIuLi5xcXEzMzPJycny8vI7OzvZ2dkjIyN3d3dJSUl1+q9ZAAAEUUlEQVR4nO2d63aqMBBGpSqggIqgeGnrpe//jqfntFUmUCGdSYbT9e2fZfVLtuGSBNaa0QgAAAAAAAAAAAAAgP+AqHieZscXR+kvx2z6XESO0ntRBB9Urw7CX/ef6U8OwntyDL44JeLhyemWfhUP78kiCBx24lpLn4in9yOr9SFIhcPTengmHN6Tc70PwVY4fUvSz8Lp/ViQPoyF068kfSGc3o8Z6cNcOH1O0mfC6f2AIQ8Y+gCGPGDoAxjygKEPFh4N/c/akjBKS9KHKo0kSSuSXqZRKL8E/cbtvK12gQ67qty49jyPtexuluONQ798390DD6xzR37RWlvtxsrJ/lvZ3bBHSnG/ZBgn6J298C0nzLrb9EwWSgqm3Q0qIHgxvk61ZVqZyo3iqbs1FZ6lBIvutpQQ2sLMtT0eIPPsP2hrPOAgIbhtz47juPEHSTpa+0LiZUIzdbf8N/n1vj7cLFum/fyWGkMYf/1sGmv85gnFH0TzKlzdXqOp7GKkb0Z/2Ffi2Qhc3Q8p7dOsjB6dmQ0taVxcO6S1E2Xcc5bMhowlRf2rCy3DF9qlPa+dkN69qvoxtd1Eukm1481Oo++HUM/QGETeEoPO2C5k1almmFzIMd7MjT5/6Cmvt+dNbw68JyLdnKFTeT1D+hUDb8vmiWTRz6/0DGmveI+LR1kTcqxgtdOELkrpR1H0Ic377O2RId28kX53Quf19IsrX4YjskMs/T4hqYev6TFvhpvaIemPvuht3HhV4c2wdq85slpp5/5tp/l+1J/hKN+5GsG/fI7irvFI92j47ricFwtX7/SSRTFftkxZvBqqAEMbYKiDO8NVMR4CxcqZ4TCBIQyHDwxhOHxgCMPhA0MYDh9Jw3k+GQL53Jnh718fwtAXMLQBhjrA0AYY6gBDG2CoAwxtgKEOMLQBhjrA0AYY6gBDG2CoAwxtgKEOMLQBhjrA0AYY6gBDG2CoAwxtgKEOMLQBhjrA0AYY6gBDG2CoAwxtgKEOMLQBhjrA0AYY6gBDG2CoAwxtgKEOMLQBhjrA0AYY6gBDG2CoAwxtgKEOMLQBhjrA0AYY6gBDG2CoAwxt+P2GkllySP7utAqLi/oAP+FIesWrwkIrray7/8ELtPQyr7L8hmTFogVqf0xI65Lx6nQbFa38l6lvgxZoYVa0Smil45NQH3nQ0rYZs/YErXHGPOdloPcGWguOHxecBbrIw6zIyP3RzXrVsZO67RZEZsnVtPt/HrM2Ao3iUr6ZmIL8J9jENAzmesMYVY3eCNQ8bqkbvyrzKPRNlJdmCdJ3Mr5gyyAOCZFrZt/djhrMIqSfRN0NqSF0S1h0t6SE2Czy2N2WCoKruWFeijIX4YAVRQXNsqBDQLrwqbGfoQ9v76KVzVRbqsaUt7D/juEMo4MB/CAszZm9BvHS5XZRMmnO7v1STVxVzLyzmY3fDpepby6Ht/HMzeUHAAAAAAAAAAAAAIAAfwBUU1pF0Gk4sQAAAABJRU5ErkJggg==" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_left,arrow_right,calendar_month" />
+</head>
+<body>
+    <div class="main-container">
+        <div class="datepicker-container">
+            <div class="datepicker-header">
+                <section class="top">
+                    <form action="">
+                        <label for="date">Date</label>
+                        <input type="text" name="date" id="date" placeholder="dd / mm / yyyy">
+                    </form>
+                    <span class="material-symbols-outlined calendar">
+                        calendar_month
+                        </span>
+                </section>
+                
+                <section class="bottom">
+                    <span class="material-symbols-outlined arrow-left">
+                        arrow_left
+                        </span>
+                    <span>December 2022</span>
+                    <span class="material-symbols-outlined arrow-right">
+                        arrow_right
+                        </span>
+                </section>
+            </div>
+
+            <div class="datepicker-body">
+                <span class="days" id="start">s</span>
+                <span class="days">M</span>
+                <span class="days">T</span>
+                <span class="days">W</span>
+                <span class="days">T</span>
+                <span class="days">F</span>
+                <span class="days" id="end">S</span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+                <span>6</span>
+                <span>7</span>
+                <span>8</span>
+                <span>9</span>
+                <span>10</span>
+                <span>11</span>
+                <span>12</span>
+                <span>13</span>
+                <span>14</span>
+                <span>15</span>
+                <span>16</span>
+                <span>17</span>
+                <span>18</span>
+                <span>19</span>
+                <span>20</span>
+                <span>21</span>
+                <span>22</span>
+                <span>23</span>
+                <span>24</span>
+                <span>25</span>
+                <span>26</span>
+                <span>27</span>
+                <span>28</span>
+                <span>30</span>
+                <span>31</span>
+                <span></span>
+            </div>
+        </div>        
+    </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    width: fit-content;
+    border: 1px solid #000;
+}
+
+.datepicker-container {
+    width: fit-content;
+}
+
+form {
+    display: inline-block;
+}
+
+input {
+    border: none;
+    padding: 3px;
+}
+
+input:focus {
+    outline: none;
+}
+
+label{
+    display: none;
+}
+
+.datepicker-header {
+    width: fit-content;
+}
+
+.top {
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-top: 1px solid #000;
+}
+
+.datepicker-body {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+}
+
+.datepicker-body > span {
+    border: 1px solid #000;
+    padding: 5px;
+}
+
+.datepicker-body > .days {
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#start {
+    border-left: 1px solid #000;
+}
+
+#end {
+    border-right: 1px solid #000;
+}
